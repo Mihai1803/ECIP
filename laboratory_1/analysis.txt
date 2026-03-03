@@ -1,0 +1,16 @@
+Q1
+What is the difference between true state and observations?
+True state is the real system value without errors while observations are measurements corrupted by noise.
+
+Q2
+How does estimation reduce noise?
+Estimation (moving average) smooths random fluctuations by averaging multiple samples while random noise cancels out partially over time.
+
+Q3
+How does changing the noise level affect estimation?
+Higher noise means that observations fluctuate more and estimation becomes less accurate and noisier. So, lower noise makes the estimate to track the true state better.
+
+Q4
+How does the window size affect the result?
+Larger window means smoother estimate but more delay while a smaller window means less smoothing but faster response.
+
