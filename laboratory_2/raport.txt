@@ -1,0 +1,59 @@
+Tasks:
+Ex1:
+Make a simulation by using the logistic regression  (population growth) expression. Use a growth factor r = 0.9. Make a simple raport that describes the fate of the population for r = 0.9
+
+Ex2:
+Use you simulation to point out at what value of r the population growth becomes chaotic
+
+Ex3:
+for each value of r calculate the poulation size and plot the data
+r =[2, 2.5, 1, 1.2, 3.1, 0.5, 4, 4.4,  3, 2.9, 2.8, 1.9, 1.5, 1.4, 7, 3.8, 8]
+
+Ex4:
+Consider the above vector, r, as values for r, measured here, acros 17 years. Answear : what will be the growth in the 17th year?
+
+Ex5:
+Make a series of experiments in which the population number starts from: 
+a) 0.1,
+b) 0.5
+c) 1.0
+d) 2
+Make a report in which you note the observations for r = 4
+
+Ex6:
+Simulate a markov machine containing three states a, b and c. Run this machine 15 times and record the sequence of states.
+Each state carries a weight:
+a: 1.5
+b: 2
+c: 3.3
+Use those weight as values for the growth factor r and calculate the population size on 15 steps according to the weights given. Start the population from 0.5.
+
+Ex7:
+modify the value of the weight for state b to a value of 0.5. Plot the evolution of the population for 15 steps based on the sequence.
+Answear the question. Does the population survive after 15 steps?
+
+
+Answears
+EX 1
+The population decreases steadily over time and eventually approaches zero. 
+Because the growth factor r = 0.9 is less than 1, the reproduction rate is not sufficient to sustain the population, leading to gradual extinction.
+
+EX2:
+Pt+1 = r * Pt * (1 - Pt)
+The population growth strongly depends on the value of the growth factor r. The population starts to become chaotic at approximately r = 3.57
+Behavior of the system:
+- For smaller values of r, the population usually converges to a fixed value or oscillates periodically.
+- Near r ≈ 3.57, the system becomes highly sensitive to the initial conditions.
+- For larger values of r, the population fluctuates irregularly, indicating chaotic behavior.
+
+EX5:
+When the initial population P0 = 4, the logistic model quickly becomes unstable and produces extremely large negative values. 
+This occurs because the logistic equation assumes normalized populations between 0 and 1.
+So values larger than 1 lead to non-physical results.
+
+Ex7:
+From the plot(image_7.png), the population decreases steadily toward zero in the last part of the simulation. 
+By step 15, the value is very close to 0, which indicates the population is collapsing toward extinction.
+This happens because whenever the Markov chain enters state b (r = 0.5), the growth factor is too small to sustain the population, causing strong decreases that eventually dominate the dynamics
+
+
