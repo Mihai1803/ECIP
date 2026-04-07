@@ -1,0 +1,43 @@
+SMARANDACHE MIHAI 1242EEA
+
+Ex1: Generate 1000 random numbers using NumPy and plot the histogram. Discuss the results
+The histogram is approximately flat, showing that the generated values are evenly distributed over the interval. 
+Small variations between bars are expected due to randomness and the limited sample size.
+
+Ex2: Simulate a random variable X - Uniform(0, 1) and plot the histogram. Interpret the distribution shape
+The histogram is flatter and smoother compared to the histogram from the previous exercise, indicating a clear uniform distribution.
+All values in [0,1] occur with nearly equal probability.
+
+Ex3: Compute sample mean of generated data from previous task and compare with theoretical mean. Discuss interpretation of expectation.
+The sample mean (0.5021) is very close to the theoretical mean (0.5).
+It shows that the expectation represents the average value the random variable converges to over many trials. 
+The small difference is due to randomness, and with more samples, the result would get even closer to 0.5
+
+Ex4: Compute variance of generated data and analyze the spread around the mean. Compare datasets with different variance.
+For Uniform(0,1) -> theoretical variance: 0.0833
+Uniform distribution (X1) -> moderate spread across the entire interval [0,1]
+Small variance (X2 = 0.01) -> values tightly clustered around the mean
+Large variance (X3 = 0.087) -> values more widely spread, higher dispersion
+
+Ex5: Generate Gaussian random variable with mean = 0, std = 1 and plot the histogram. Compare with uniform distribution.
+The uniform distribution appears flat, indicating equal probability across the interval.
+The Gaussian distribution is concentrated around the mean, showing that values near the center are more likely than those at the extremes.
+
+Ex6: Generate Gaussian noise with different variance, plot and compare distrubutions. Discuss uncertainty.
+All distributions are centered around zero, but increasing variance makes them wider and more spread out. 
+This reflects higher uncertainty, as values deviate more from the mean and become less predictable
+
+Ex7: Simulate true value x = 10 and generate measurements y = x + noise. Plot measurements distribution
+
+Ex8: Compute average of noisy measurements. Compare estimate with true value. Discuss estimation error.
+The estimated value (10.0092) is very close to the true value (10), indicating that averaging effectively reduces noise. 
+The small estimation error (0.0092) is due to randomness and would decrease further with more measurements
+
+Ex9: Generate two correlated random variables. Compute covariance. Interpret relationship.
+The positive covariance (~2.02) indicates a strong direct relationship, meaning X and Y increase together. 
+The linear pattern in the scatter plot confirms a strong positive correlation between the variables.
+
+
+Ex10: Simulate event probabilities. Estimate P(A|B) from data. Interpret conditional probabilities.
+The estimated value P(A|B) approx 0.402 is close to P(A)=0.4, indicating that A and B are approximately independent.
+This means that knowing B occurs does not significantly change the probability of A.
