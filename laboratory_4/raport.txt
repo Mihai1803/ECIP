@@ -1,0 +1,6 @@
+EX 4: Why system fails?
+The matrix is singular (det = 0). There are no unique solution and the sensors give redundant information (same data scaled)
+
+EX6: Explain impact on decision
+Squared error  -> penalizes large errors more (good when big mistakes are critical)
+Absolute error -> treats all errors more evenly (more robust to outliers)
