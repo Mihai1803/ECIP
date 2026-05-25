@@ -1,0 +1,7 @@
+Sound clarification task
+
+Use 2 machines (pcs / laptops) in which one is the emitter of the sound and the other one is the receiver at a distance of 2 m.
+Use the micorphone of the 2nd machine to capture the specific soud via Matlab. Use matlab to apply different strategies discussed at the beggining of the semester, to amplify and clarify the received input. 
+The test must imply a voice conversation that we emitter by machine 1 and received at machine 2.
+
+Use the artificial intelligent to transform the conversations from the output signal into text. Measure the error in relation to distance 
